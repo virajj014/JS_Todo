@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom left, #5e17eb -4%, #ff5757 99%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.head-main {
+    font-family: 'Nunito', sans-serif;
+    font-size: 70px;
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+.rightbottombtn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: white;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.rightbottombtn svg {
+    color: #cb17eb;
+}
+
+.rightbottombtn:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: 1s;
+}
+
+.container {
+    margin-top: 10%;
+    /* background-color: #5e17eb;
+         */
+    background-color: rgba(255, 255, 255, 0.313);
+    width: 50%;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.container h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+.task {
+    background-color: white;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.task-text .task-sno {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: rgb(42, 42, 42);
+    margin-right: 10px;
+}
+
+.task-text .task-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    color: rgb(42, 42, 42)
+}
+
+.task-edit-delete {
+    display: flex;
+}
+
+.task-edit-delete .icon {
+    width: 40px;
+    height: 40px;
+    color: red;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgb(179, 179, 179);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0px 10px;
+    padding: 3px;
+}
+
+
+.task:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.blurbgaddtask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.806);
+    width: 100%;
+    height: 100%;
+}
+
+
+.blurbgedittask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.806);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#addtaskcont,
+#edittaskcont {
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70%;
+}
+
+#addtaskcont input,
+#edittaskcont input {
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+#addtaskcont label,
+#edittaskcont label {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(200, 200, 200);
+    width: 100%;
+    /* background-color: #cb17eb; */
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#addtaskcont button,
+#edittaskcont button {
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: white;
+    background-color: rgb(126, 87, 255);
+    font-family: 'Nunito', sans-serif;
+}
+
+#addtaskcont button:hover {
+    transform: scale(1.03);
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: #5e17eb;
+}
+
+
+#addtaskerror {
+    color: red;
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 100%;
+    font-weight: 200;
+    display: none;
+    margin-bottom: 10px;
+}
